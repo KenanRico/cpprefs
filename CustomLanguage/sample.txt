@@ -1,0 +1,5 @@
+integer x=5; //or "integer x= 5" or "integer x = 5" or "integer x"
+integer y=x*2;
+print "$y+$x=" y+x;
+
+
