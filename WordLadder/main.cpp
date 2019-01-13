@@ -15,7 +15,7 @@ int main(){
 	//define inputs
 	std::string in_word = "hit";
 	std::string hidden_words[] = {"hot", "dot", "dog", "lot", "log"};
-	std::string out_word = "cog";
+	std::string out_word = "cogggg";
 	int word_count = sizeof(hidden_words)/sizeof(std::string) + 2;
 
 	//generate graph from hidden words
@@ -101,6 +101,7 @@ int ShortestPath(bool const * const * graph, int dimension){
 		for(int i=0; i<dimension; ++i){
 			if(graph[node.i][i]==true && !visit[i]){
 				queue.push((struct WordDistPair){i, node.dist+1});
+				visit[i] = true;
 			}
 		}
 	}
